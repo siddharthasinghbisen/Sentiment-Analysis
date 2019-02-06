@@ -1,0 +1,22 @@
+
+<?php
+require_once 'app/init.php';
+
+$query = $db->query('SELECT * FROM article');
+
+$article=[];
+while($row = $query->fetch_object()) {
+	$article[] = $row;
+}
+print_r($article);
+?>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Articles</title>
+</head>
+<body>
+
+	</body>
+	</html>
